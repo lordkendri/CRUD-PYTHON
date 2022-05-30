@@ -103,7 +103,7 @@ def storage():
     _correo=request.form['txtCorreo']
     _foto=request.files['txtFoto']
 
-    if _nombre == '' or correo == '' or foto == '':
+    if _nombre == '' or _correo == '' or _foto == '':
         flash('Campos incompletos')
         return redirect(url_for('create'))
         
